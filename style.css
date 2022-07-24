@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rotate__wrapper,
+.pulse__wrapper,
+.shadow__wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.rotate__wrapper img,
+.pulse__wrapper img,
+.shadow__wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition: all 0.7s ease-in-out;
+}
+
+.rotate__wrapper img:hover {
+    transform: rotate(360deg);
+}
+
+.pulse__wrapper img {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.shadow__wrapper img:hover {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,
+        rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
