@@ -11,6 +11,7 @@ body {
 }
 
 .rotate__wrapper,
+.rotateX__wrapper,
 .pulse__wrapper,
 .shadow__wrapper {
     width: 200px;
@@ -27,8 +28,18 @@ body {
     transition: all 0.7s ease-in-out;
 }
 
+.rotateX__wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition: all 2.7s ease-in-out;
+}
+
 .rotate__wrapper img:hover {
     transform: rotate(360deg);
+}
+.rotateX__wrapper img:hover {
+    transform: rotateX(100deg) rotateY(9960deg);
 }
 
 .pulse__wrapper img {
